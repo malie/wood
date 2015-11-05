@@ -1,0 +1,23 @@
+{
+  "name": "str8ts-studio",
+  "version": "1.0.0",
+  "description": "Interactive Web UI for STR8TS Puzzles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Markus Liedl",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "condensate": "git+https://github.com/malie/condensate.git",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "react-router": "^1.0.0-rc3",
+    "underscore": "^1.8.3",
+    "watchify": "^3.6.0"
+  },
+  "devDependencies": {
+    "babelify": "^7.0.2"
+  }
+}
