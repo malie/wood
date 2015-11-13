@@ -344,7 +344,8 @@ var handler = {
 
   fieldClicked: function (col, row) {
     console.log('field clicked', col, row)
-    if (!m.isGivenAt(col, row)) {
+    if (!m.isGivenAt(col, row)
+	&& !m.isBlackAt(col, row)) {
       m = m.clone();
       m.setSelected(col, row);
       m.setSelectedField(m.isWrong(col,row)
@@ -352,7 +353,8 @@ var handler = {
       renderModel(m)}},
   
   mouseOverField: function (col, row) {
-    if (m.isGivenAt(col, row)) {
+    if (m.isGivenAt(col, row)
+	|| m.isBlackAt(col, row)) {
       m = m.clone();
       m.selectNothing()
       renderModel(m)}
